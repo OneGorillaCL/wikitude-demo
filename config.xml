@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<widget id="cl.onegorilla.wikitude" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0" xmlns:gap="http://phonegap.com/ns/1.0">
+  <name>WikiTude</name>
+  <description>
+        Demo Wikitude.
+    </description>
+  <author email="info@onegorilla.cl" href="http://onegorilla.cl/">
+      OneGorilla
+    </author>
+  <gap:plugin name="cordova-plugin-statusbar" source="npm" version="2.1.3"/>
+  <gap:plugin name="ionic-plugin-keyboard" source="npm" version="2.2.1" />
+  <gap:plugin name="cordova-plugin-inappbrowser" source="npm" version="1.4.0"/>
+  <gap:plugin name="cordova-plugin-whitelist" source="npm" version="1.2.2"/>
+  <gap:plugin name="cordova-plugin-network-information" source="npm" version="1.2.1"/>
+  <gap:plugin name="com.wikitude.phonegap.wikitudeplugin" source="npm" version="5.2.0"/>
+  <content src="index.html"/>
+  <access origin="*"/>
+  <allow-navigation href="http://*/*"/>
+  <preference name="webviewbounce" value="false"/>
+  <preference name="UIWebViewBounce" value="false"/>
+  <preference name="DisallowOverscroll" value="true"/>
+  <preference name="SplashScreenDelay" value="2000"/>
+  <preference name="FadeSplashScreenDuration" value="2000"/>
+  <preference name="android-minSdkVersion" value="16"/>
+  <preference name="BackupWebStorage" value="none"/>
+  <preference name="orientation" value="portrait"/>
+  <preference name="SplashScreen" value="splash"/>
+  <preference name="AutoHideSplashScreen" value="false" />
+  <preference name="FadeSplashScreen" value="false"/>
+  <preference name="SplashScreenDelay" value="30000"/>
+  <feature name="StatusBar">
+    <param name="ios-package" value="CDVStatusBar" onload="true"/>
+  </feature>
+  <gap:config-file platform="ios" parent="CFBundleDevelopmentRegion" overwrite="true">
+    <string>Spanish</string>
+  </gap:config-file>
+
+</widget>
